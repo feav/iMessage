@@ -1,0 +1,7 @@
+{
+  "name": "iMessage",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

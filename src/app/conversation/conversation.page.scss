@@ -1,0 +1,108 @@
+.message-bgb{
+    /* background-image: url("../../assets/bgMessage.png"); */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 78% 75%, 81% 84%, 63% 75%, 0% 75%);
+
+}
+.footer-them{
+  background-color: #2c5874;
+}
+.sender{
+  width: 45px;
+  height: 50px;
+  border-radius: 45px;
+  text-transform: capitalize;
+  cursor: pointer;
+  --background:#2c5874;
+}
+.portainer{
+  margin-bottom: 10px;
+}
+.them-color{
+    color: #2c5874;
+}
+.title-page{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 17px;
+}
+.box { 
+    width: 100%;
+    margin: 10px auto;
+    padding: 8px;
+    font-weight: normal;
+    font-family: arial;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px #2c5874;
+    padding: 6px 8px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    text-justify: distribute-all-lines;
+    line-height: 20px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  .title-header{
+    width: 46px;
+    height: 45px;
+    background-color: #dde;
+    text-align: center;
+    padding-top: 11px;
+    border-radius: 50px;
+    margin: 0 30%;
+  }
+  .name{
+    width: 100%;
+    margin: 0 -10%;
+    font-size: 15pt;
+  }
+  .sb3:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 11px solid transparent;
+    border-right: 10px solid #dde;
+    border-top: 10px solid #ddd;
+    border-bottom: 10px solid transparent;
+    right: 20px;
+    bottom: -20px;
+    
+  }
+  
+  .sb4:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 11px solid transparent;
+    border-right: 10px solid #dde;
+    border-top: 10px solid #dde;
+    border-bottom: 10px solid transparent;
+    right: 20px;
+    bottom: -19px;
+  }
+  .sb4::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 9px solid transparent;
+    border-right: 9px solid #ffffff;
+    border-top: 9px solid #fff;
+    border-bottom: 10px solid transparent;
+    right: 21px;
+    bottom: -18px;
+  }
+  .liner{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+

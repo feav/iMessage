@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+        <!-- ion-buttons slot="start">
+          <ion-back-button defaultHref="/home" text="Accueil"></ion-back-button>
+        </ion-buttons -->
+        <ion-buttons slot="start">
+      <ion-menu-button class="them-color"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>
+       <div class="liner" center padding>
+          <div *ngIf='data' class="short-name them-color title-header">
+              {{shortName(data.name)}}
+          </div>
+          <div *ngIf='data' class="name them-color">
+              {{data.name}}
+          </div>
+       </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item *ngFor=" let message of messages" >
+      <ion-grid *ngIf='message.sender==data.name' class="portainer">
+          <div>
+              <h4 class="title-page"> {{message.date}}</h4>
+          </div>
+          <div class="box sb4">
+              {{message.message}}
+          </div>
+    </ion-grid>
+  </ion-item>
+</ion-list>
+</ion-content>
+<ion-footer class="">
+    
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10">
+        <ion-input [(ngModel)]="messageText" type="text" placeholder="Entrer votre message"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button shape="round" class="sender"  (click)="Send()">Send</ion-button>
+       
+      </ion-col>  
+    </ion-row>
+  </ion-grid>
+</ion-footer>

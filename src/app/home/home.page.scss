@@ -1,0 +1,100 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.them-color{
+  color: #2c5874;
+
+}
+
+.menu{
+  --box-shadow: 0px 0px 0px rgba(182, 30, 30, 0.59);
+}
+.title-app{
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+}
+.sms-line{
+  display: flex;
+  flex-direction: row;
+}
+.author{
+  width: 20%;
+ 
+}
+.custom-btn{
+  position: fixed;
+  right: 17px;
+  bottom: 2%;
+  width: 51px;
+  height: 50px;
+  font-weight: 900;
+  font-family: 'Arial Black';
+  --background:#2c5874;
+
+  color: #ffffff;
+}
+.sms-content{
+  display: flex;
+  flex-direction: column;
+}
+.auth-ctn{
+  width: 60px;
+  background-color: #dddd;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  height: 60px;
+}
+.datepost-author{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.datepost-author>div{
+  width: 50%;
+}
+.bg{
+  background-color:#dde;
+  
+}
+.app-color{
+  color: #2c5874;
+}
+.name{
+  font-weight: 600;
+}
+.message{
+  text-align: justify;
+  text-justify: distribute;
+  padding-top: 1.5%;
+  line-height: 1.4em;
+  color: #777;
+}
+.time-post{
+  width: 50%;
+  text-align: right;
+  padding-right: 4%;
+}
+.datepost-author>div{
+  float: left
+}
+.short-name{
+
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Arial Black';
+  background-color: #dde;
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  padding-top: 20px;
+}
+.sms-content{
+  width: 80%;
+}
+.ctn{
+  margin-bottom: 1%;
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="them-color"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="them-color">
+      iMessage
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor=" let item of items" >
+        
+
+  <ion-grid >
+    <ion-row class="ctn" (click)='particular(item.sender)'>
+      <ion-col size="3" class="">
+          <div class="short-name">
+              {{shortName(item.sender)}}
+          </div>
+      </ion-col>
+      <ion-col size="9">
+          <div class="datepost-author">
+              <div class="name app-color">  {{item.sender}}</div>
+              <div class="time-post">  {{item.date}}</div>
+           </div>
+           <div>
+              <div class="message">
+                  {{item.message}} 
+              </div>
+           </div>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-item>
+</ion-list>
+<ion-button routerLink="/nouveau" shape="round" class="custom-btn">+</ion-button>
+    <!-- ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Resources</ion-label>
+      </ion-list-header>
+      <ion-item href="https://ionicframework.com/docs/">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Ionic Documentation</ion-label>
+      </ion-item>
+    </ion-list -->
+</ion-content>

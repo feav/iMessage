@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button class="them-color"></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="them-color">
+          Nouveau message
+        </ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid padding>
+        <ion-row>
+          <ion-col size="12">
+            <ion-input class="flat-input" [(ngModel)]="numero" type="number" placeholder="Numéro comtact"></ion-input>
+          </ion-col> 
+          <ion-col size="12">
+              <ion-input class="flat-input" [(ngModel)]="sender" type="text" placeholder="Nom comtact"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+              <ion-input class="flat-input" [(ngModel)]="nomexp" type="text" placeholder="Nom expediteur"></ion-input>
+          </ion-col> 
+        </ion-row>
+      </ion-grid>
+</ion-content>
+<ion-footer class="">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10">
+          <ion-input [(ngModel)]="messageText" type="text" placeholder="Entrer votre message"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button shape="round" class="sender"  (click)="Newmessage()">Send</ion-button>
+         
+        </ion-col>  
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
